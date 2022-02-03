@@ -1,0 +1,16 @@
+.footer {
+    background-color: black;
+    color: aliceblue;
+    font-family: 'Archivo', sans-serif;
+    font-size: 18px;
+    height: 5vh;
+    width: 100% ;
+    position: fixed;
+    left:0%;
+    bottom: 0;
+    padding:0%;
+
+    
+    
+
+}

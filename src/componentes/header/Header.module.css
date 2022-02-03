@@ -1,0 +1,19 @@
+
+.navbar {
+    margin: 0%;
+    padding: 0%;
+    height: 74px;
+  }
+  
+  .img_navbar {
+    background-image: url(./tropical-green-leaves-background.jpg);
+  }
+  
+  .logo {
+    font-family: "Lobster", cursive;
+    color: rgba(255, 255, 255, 1);
+    font-size: 36px;
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+  }
