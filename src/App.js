@@ -1,14 +1,17 @@
 import './App.css';
-import { Routes, Route } from "react-router-dom" ;
 import Show from "./views/Show";
 import Landing from "./views/Landing";
+import Header from './componentes/header/Header';
+import Footer from './componentes/footer/Footer';
 function App() {
   return (
-    <Routes>
-    <Route index element={<Landing />} />
-    <Route path="/show" element={<Show />} />
-    
-    </Routes> 
+   
+  <div>
+    <Header/>
+    <h1>GREEN GO</h1>
+    <Landing />
+    <Footer/>
+   </div>
     /* <div>
       <h4>{images[0].description}</h4>
       <h3>{images[0].price}</h3>
@@ -19,6 +22,7 @@ function App() {
       <body_product />
      </section>
     </div> */
+
   );
 }
 
