@@ -1,49 +1,148 @@
-.Container{
-    display: flex;
+
+.bigcontainer{
+    background-color: rgb(218, 218, 218);
+    height: 858vh;
+    display:flex;
+    margin :auto;
     flex-direction: column;
-    background-color:#1c9b0b;
-    box-sizing: border-box;
-    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: fixed;
+  
+  
 
 }
-
-
 
 .ContainerProduct{
     float:left;
-    border: 1px solid black;
-    padding: 25px 50px 75px; 
-    background-color: red;
+    /* border: 1px solid black; */
+    background-color: #e0d7d7;
     position: static;
     overflow:visible;
+    width: 100%;
+    height: 37vh;
+    margin: 116px;
+    justify-content: space-around;
+
+}
+.imgplant{
+   
+
+    position: absolute;
+    width: 447px;
+    height: 492px;
+    left: 95px;
+    top: 128px;
+
+    background: url(../media/cucharitaflor.png);
 
 }
 
+.textproduct {
+    /* Cucharita */
 
-.text {
-    font-size: 14px;
-
-}
-
-.button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 12px;
-
-}
-
-.containerproducts{
-    border: 10px solid #3EC483;
-    background: #5DEAA8;
+    position: absolute;
+    width: 520px;
     height: 100px;
-    width: 200px;
-    padding: 10px;
-    margin: 10px;
+    left: 678px;
+    top: 74px;
+
+    font-family: Archivo;
+    font-style:normal;
+    font-weight:200;
+    font-size: 64px;
+    line-height: 70px;
+
+    color: #416E51;
+
+
+
+}
+.textshop {
+    position: relative;
+    width: 520px;
+    height: 100px;
+    left: 558px;
+    top: 158px;
+
+    font-family: Archivo;
+    font-style: Bold;
+    font-weight:200;
+    font-size: 17px;
+    line-height: 70px;
+    color: black;
+}
+.price  {
+   
+
+    position: sticky;
+    width: 288px;
+    height: 76px;
+    left: 674px;
+    top: 277px;
+
+    font-family: Archivo Black;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+
+    color: #91BB58;
+
+
+}
+.description {
+    position: initial;
+    width: 590px;
+    height: 140px;
+    left: 675px;
+    top: 333px;
+
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
+    margin-left: 555px;
+
+
+}
+
+
+.Allproductsshop{
+  
+    
+    /* Rectangle 15 */
+
+    position: fixed;
+    width: 1199px;
+    height: 216px;
+    left: 57px;
+    top: 666px;
+
+    background: #416D50;
+    border-radius: 20px;
+
+}
+.textcards{
+    /* More PenguinShop products */
+
+    position: fixed;
+    width: 509px;
+    height: 77px;
+    left: 91px;
+    top: 646px;
+
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 39px;
+
+    color: #C4E1CD;
+}
+.cards{
+
 
 }
