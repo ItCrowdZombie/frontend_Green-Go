@@ -1,16 +1,19 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { getAllCards } from "../../service";
+import { Card } from "./Card";
 
-export function CardGrid (){
-    const [products,setProducts] = useState([
-        {
-            id:1,
-            name:"piraña"
-        },
-        {
-            id:2,
-            name:"cucharita"
-        }
-    ]);
-    return <h1>{products.map(product =><li>{product.id} {product.name}</li>)}</h1>
+export function CardGrid() {
+  const [products, setProducts] = useState([]);
+  useEffect(() => {
+    getAllCards().then((response) => setProducts(response));
+  });
+  return (
+    <h1>
+      TEst{" "}
+      {products.map((product) => (
+        <Card product={product} />
+      ))}
+    </h1>
+  );
+  // return <h1>{products.map(product =><Card/>)}</h1>
 }
-

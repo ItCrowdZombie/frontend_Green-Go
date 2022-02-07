@@ -4,7 +4,7 @@ import Styles from "./Buttons.module.css"
 export default function Carrito (){
     return (
         <div className={Styles.button}>
-            <i class="fas fa-shopping-cart"></i>
+            <i className="fas fa-shopping-cart"></i>
             
         </div>
     )

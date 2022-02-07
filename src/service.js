@@ -1,17 +1,23 @@
-import cucharita from './media/cucharita.png';
-import planta1 from 'media/planta1.jpg';
+
 
 const cards = [
-     {"img":cucharita,
-      "seller":{name:PenguinShop, id:1},
-      "price": 15,
-      "description": decorative ,
+     {
+      name: "cucharita",
+      seller:{name:"PenguinShop", id:1},
+      price: 15,
+      description: "decorative" ,
 
     },
-    {"img":planta1,
-      "shop":PenguinShop,
-      "price": 15,
-      "description": decorative ,
+    {
+      name: "tenedor",
+      seller:{name:"PepeShop", id:2},
+      price: 16,
+      description: "decorative tambien" ,
+
     },
      
 ]
+
+export async function getAllCards() {
+  return cards;
+}
