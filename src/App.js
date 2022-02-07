@@ -12,16 +12,7 @@ function App() {
     <Landing />
     <Footer/>
    </div>
-    /* <div>
-      <h4>{images[0].description}</h4>
-      <h3>{images[0].price}</h3>
-      <h2>{images[0].shop}</h2>
-      <img src={images[0].img}/>
-      <h1>GREEN GO</h1>
-      <section className='components'>
-      <body_product />
-     </section>
-    </div> */
+    
 
   );
 }
