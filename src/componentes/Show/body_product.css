@@ -1,16 +1,34 @@
 
+
+
 .bigcontainer{
     background-color: rgb(218, 218, 218);
-    height: 858vh;
+    height: 100vh; 
     display:flex;
     margin :auto;
-    flex-direction: column;
+    flex-direction: column; 
     flex-wrap: wrap;
-    flex-direction: row;
-    position: fixed;
+    /* flex-direction: row;*/
+     /* position: fixed; 
+     */
   
   
 
+}
+@media (max-width: 600px){
+    .bigcontainer{
+        flex-direction: column;
+        
+        
+    }
+    .ContainerProduct{
+        flex-direction: column;
+        
+    }
+    .Allproductsshop{
+        flex-direction: column;
+       
+    }
 }
 
 .ContainerProduct{
