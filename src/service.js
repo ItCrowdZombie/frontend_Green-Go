@@ -32,3 +32,8 @@ const cards = [
 export async function getAllCards() {
   return cards;
 }
+
+export async function getAllCardsBySellerId ()
+{
+  return cards.filter( ( card ) => card.seller.id === 1 )
+}
