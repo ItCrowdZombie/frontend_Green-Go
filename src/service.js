@@ -1,5 +1,4 @@
-import {axios} from "axios";
-
+import axios from "axios";
 
 const cards = [
   {
@@ -32,9 +31,8 @@ const cards = [
   },
 ];
 
-
 export async function getAllCards() {
-  return axios.get("http://localhost:8080/products").then((res) => console.log(res.data));
+  return axios.get("http://localhost:8080/products").then((res) => res.data);
 }
 
 export async function getAllCardsBySellerId() {
