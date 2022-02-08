@@ -1,0 +1,52 @@
+.cardStyle {
+  width: 200px;
+  height: 250px;
+  background-color: #EAF3EE;
+  font-size: small;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  padding: 10px;
+
+  
+
+
+}
+
+/* .ct-cards {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: 300px;
+    gap: 1rem;
+    justify-content: center;
+    margin: 1rerm;
+    margin-top: 5%; */
+
+
+
+.nameStyle {  
+    overflow-wrap: normal;
+    
+
+
+}
+
+
+.priceStyle{
+    overflow-wrap: normal;
+
+}
+
+.contentStyle {
+    overflow-wrap: normal;
+}
+
+.sellerStyle {
+
+}
+
+.imgStyle img {
+    width: 80px;
+    height: 80px;
+}

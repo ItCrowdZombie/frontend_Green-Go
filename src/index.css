@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Archivo', sans-serif;
+  font-family: "Archivo", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: white;
@@ -8,5 +8,5 @@ body {
 }
 
 code {
-  font-family: 'Archivo', sans-serif;
+  font-family: "Archivo", sans-serif;
 }
