@@ -1,3 +1,6 @@
+import {axios} from "axios";
+
+
 const cards = [
   {
     img: "http://localhost:3000/media/planta3.jpg",
@@ -29,11 +32,11 @@ const cards = [
   },
 ];
 
+
 export async function getAllCards() {
-  return cards;
+  return axios.get("http://localhost:8080/products").then((res) => console.log(res.data));
 }
 
-export async function getAllCardsBySellerId ()
-{
-  return cards.filter( ( card ) => card.seller.id === 1 )
+export async function getAllCardsBySellerId() {
+  return cards.filter((card) => card.seller.id === 1);
 }
