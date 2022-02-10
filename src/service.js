@@ -41,8 +41,14 @@ export async function getAllCards() {
 
 export async function getAllCardsBySellerId() {
   return cards.filter((card) => card.seller.id === 1);
+  
+  
+  
 }
 
-export async function getCardById(id) {
-  return cards.filter((card) => card.id === id)
+export async function getCardById() {
+  
+  return cards.filter((card) => card.id === 1)
+  
+  
 }

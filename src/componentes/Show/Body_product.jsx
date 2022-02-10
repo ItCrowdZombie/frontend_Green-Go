@@ -4,14 +4,15 @@ import { getCardById } from "../../service";
 
 import "../Show/body_product.css";
 import { CardsSeller } from "../cards/CardsSeller";
+import { useParams } from "react-router-dom";
 
-
-
-export default function Body_product () {
-  const [products, setProducts] = useState([]);
+export default function Body_product() {
+  const [product, setProduct] = useState([]);
   useEffect(() => {
-    getCardById().then((response) => setProducts(response));
-  },[]);
+    getCardById().then((response) => setProduct(response));
+  }, []);
+  const { id } = useParams();
+ 
 
   return (
     <main>
@@ -22,18 +23,16 @@ export default function Body_product () {
           </div>
 
           <div className="textproduct">
-            <p>{products.name}</p>
+            {id}
+           
+            
+
+            <p>{product.name}</p>
           </div>
-          <div className="textshop">
-            <p>{products.seller.name}</p>
-          </div>
-          <div className="price">
-            <p>{products.price}</p>
-          </div>
+          <div className="textshop">{/* <p>{product.seller.name}</p> */}</div>
+          <div className="price">{/* <p>{product.price}</p> */}</div>
           <div className="description">
-            <p>
-              {products.description}
-            </p>
+            <p>{/* {product.description} */}</p>
           </div>
         </div>
 
@@ -41,12 +40,9 @@ export default function Body_product () {
           <div className="textcards">
             <p>More PenguinShop products</p>
           </div>
-          <div className="cards">
-            <CardsSeller />
-          </div>
+          <div className="cards">{/* <CardsSeller /> */}</div>
         </div>
       </div>
     </main>
   );
-};
-
+}

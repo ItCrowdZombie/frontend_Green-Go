@@ -1,8 +1,10 @@
 import style from "./Card.module.css";
+import { Link } from "react-router-dom";
 
 export function Card(props) {
   return (
     <div className={style.cardStyle}>
+      <Link to= {`/show/${props.product.name}`} >
       <div className={style.imgStyle}>
         <img src={props.product.image} />
       </div>
@@ -14,6 +16,7 @@ export function Card(props) {
       <div className={style.sellerStyle}>
         seller:{props.product.seller.name}
       </div>
+      </Link>
     </div>
   );
 }

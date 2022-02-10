@@ -10,7 +10,7 @@ export function CardGrid() {
   return (
     <h1>
       {products.map((product) => (
-        <Card product={product} />
+        <Card product={product} key={product.id} />
       ))}
     </h1>
   );
