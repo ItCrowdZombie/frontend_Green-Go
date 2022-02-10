@@ -32,9 +32,13 @@ const cards = [
 ];
 
 export async function getAllCards() {
-  return axios.get("http://localhost:8080/products").then((res) => res.data);
+  return axios.get("http//localhost:8080/products").then((res) => res.data);
 }
 
 export async function getAllCardsBySellerId() {
   return cards.filter((card) => card.seller.id === 1);
+}
+
+export async function getCardById() {
+  return axios.get("http//localhost:8080/products/{id}").then((res)=>res.data);
 }

@@ -9,7 +9,6 @@ export function CardGrid() {
   });
   return (
     <h1>
-      TEst{" "}
       {products.map((product) => (
         <Card product={product} />
       ))}

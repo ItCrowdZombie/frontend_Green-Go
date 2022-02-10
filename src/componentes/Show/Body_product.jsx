@@ -1,9 +1,18 @@
 import React from "react";
+import { useEffect, useState } from "react";
+import { getCardById } from "../../service";
 
 import "../Show/body_product.css";
 import { CardsSeller } from "../cards/CardsSeller";
 
-const Body_product = () => {
+
+
+export default function Body_product () {
+  const [products, setProducts] = useState([]);
+  useEffect(() => {
+    getCardById().then((response) => setProducts(response));
+  });
+
   return (
     <main>
       <div className="bigcontainer">
@@ -13,23 +22,17 @@ const Body_product = () => {
           </div>
 
           <div className="textproduct">
-            <p>cucharita</p>
+            <p>{products.name}</p>
           </div>
           <div className="textshop">
-            <p>PenguinShop</p>
+            <p>{products.seller.name}</p>
           </div>
           <div className="price">
-            <p>15,20€</p>
+            <p>{products.price}</p>
           </div>
           <div className="description">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              {products.description}
             </p>
           </div>
         </div>
@@ -47,4 +50,3 @@ const Body_product = () => {
   );
 };
 
-export default Body_product;
