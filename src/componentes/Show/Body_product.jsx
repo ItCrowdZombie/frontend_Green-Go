@@ -11,7 +11,7 @@ export default function Body_product () {
   const [products, setProducts] = useState([]);
   useEffect(() => {
     getCardById().then((response) => setProducts(response));
-  });
+  },[]);
 
   return (
     <main>

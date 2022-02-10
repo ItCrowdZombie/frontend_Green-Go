@@ -6,7 +6,7 @@ export function CardGrid() {
   const [products, setProducts] = useState([]);
   useEffect(() => {
     getAllCards().then((response) => setProducts(response));
-  });
+  },[]);
   return (
     <h1>
       {products.map((product) => (
