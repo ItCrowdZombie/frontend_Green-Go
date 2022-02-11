@@ -6,7 +6,7 @@ export function CardsSeller() {
   const [products, setProducts] = useState([]);
   useEffect(() => {
     getAllCardsBySellerId().then((response) => setProducts(response));
-  });
+  },[]);
   return (
     <h1>
       {products.map((product) => (

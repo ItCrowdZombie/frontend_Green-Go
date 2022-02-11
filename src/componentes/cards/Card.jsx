@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export function Card(props) {
   return (
     <div className={style.cardStyle}>
-      <Link to= {`/show/${props.product.name}`} >
+      <Link to= {`/show/${props.product.id}`} >
       <div className={style.imgStyle}>
         <img src={props.product.image} />
       </div>
@@ -14,7 +14,7 @@ export function Card(props) {
         description:{props.product.description}
       </div>
       <div className={style.sellerStyle}>
-        seller:{props.product.seller.name}
+       {/*  seller:{props.product.seller} */}
       </div>
       </Link>
     </div>

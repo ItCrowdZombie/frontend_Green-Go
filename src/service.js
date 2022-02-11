@@ -1,4 +1,5 @@
 import axios from "axios";
+import apiServer from "./Global";
 
 const cards = [
   {
@@ -36,19 +37,14 @@ const cards = [
 ];
 
 export async function getAllCards() {
-  return axios.get("http://localhost:8080/products").then((res) => res.data);
+  return axios.get(apiServer+"/products").then((res) => res.data);
 }
 
 export async function getAllCardsBySellerId() {
-  return cards.filter((card) => card.seller.id === 1);
-  
-  
-  
+  return cards.filter((card) => card.seller.id === 1); 
 }
 
-export async function getCardById() {
-  
-  return cards.filter((card) => card.id === 1)
-  
-  
+export async function getCardById(id) { 
+  return axios.get(apiServer+"/products/"+id).then((res) => res.data)
+ 
 }
