@@ -6,7 +6,7 @@ export function ShowProduct(props) {
       <div className="bigcontainer">
         <div className="ContainerProduct">
           <div >
-            <img className="imgplant" src={props.product.image} alt="{props.product.name}" />
+            <img className="imgplant" src={props.product.image} alt={props.product.name}/>
           </div>
 
           <div className="textproduct">
