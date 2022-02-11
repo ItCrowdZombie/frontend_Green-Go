@@ -5,11 +5,12 @@ import { Card } from "../cards/Card";
 import "../Show/body_product.css";
 import { CardsSeller } from "../cards/CardsSeller";
 import { useParams } from "react-router-dom";
+import {ShowProduct} from "./ShowProduct";
 
 
 
 
-export function CardById ()
+export function BodyProduct ()
 {
   const {id} = useParams();
   const [ product, setProduct ] = useState( [] );
@@ -18,11 +19,12 @@ export function CardById ()
   },[]);
   /* const { id } = useParams();  */
   return (
-    <h1>
+    <div>
 
-        <Card product={product}/>
+        <ShowProduct product={product}/>
+        
 
-    </h1>
+    </div>
   );
   // return <h1>{products.map(product =><Card/>)}</h1>
 }
